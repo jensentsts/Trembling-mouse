@@ -39,5 +39,5 @@ if __name__ == '__main__':
                 move_y = 0
             if move_y > screen_size.height:
                 move_y = screen_size.height - 1
-            pag.moveTo(move_x, move_y)
+            pag.moveTo(move_x, move_y, duration=0.001)
 
