@@ -65,10 +65,12 @@ class Bezier:
                 fact += [fact[i - 1] * i * 1.0]
 
     def is_end(self) -> bool:
+        """是否结束"""
         return self.__t == 1
 
     @property
     def point(self) -> pag.Point:
+        """当前的点坐标"""
         if self.__point is not None:
             return self.__point
         global fact
@@ -84,10 +86,16 @@ class Bezier:
 
     @property
     def t(self) -> float:
+        """t"""
         return self.__t
+
+    @t.setter
+    def t(self, value: float):
+        self.__t = value
 
     @property
     def step_length(self) -> float:
+        """步长"""
         return self.__step_length
 
     @step_length.setter
@@ -97,10 +105,6 @@ class Bezier:
         if value < 0.0:
             raise ValueError
         self.__step_length = value
-
-    @t.setter
-    def t(self, value: float):
-        self.__t = value
 
     def next(self):
         """
