@@ -2,7 +2,7 @@
 # @Time    : 2024/2/11 21:18
 # @Author  : jensentsts
 # @File    : main.py
-# @Description : 帕金森模拟器main
+# @Description : 抖手模拟器main
 
 import pyautogui as pag
 import random
@@ -14,7 +14,7 @@ range_right = 256
 
 if __name__ == '__main__':
     print("How to stop the program:")
-    print("Move your mouse to the left down point of your screen, then it will break down.")
+    print("Move your mouse to the left-up or right-down point of your screen, then it will break down.")
     screen_size = pag.size()
     while True:
         [x, y] = [0, 0]

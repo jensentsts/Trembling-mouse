@@ -2,7 +2,7 @@
 # @Time    : 2024/2/11 21:29
 # @Author  : jensentsts
 # @File    : bezier.py
-# @Description : 生成贝塞尔曲线
+# @Description : 贝塞尔曲线
 
 import pyautogui as pag
 
